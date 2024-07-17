@@ -1,16 +1,5 @@
-# finote
+# Finote
 
-comprehensive digital platform where travelers can easily search for bus schedules, book tickets, and make secure payments online. Bus operators can manage their schedules, validate tickets, and track bookings in real-time, improving efficiency and customer satisfaction.
+## Finote - Cross-Country Bus Ticketing App
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Finote is a mobile application designed to revolutionize bus travel in Ethiopia by allowing travelers to purchase tickets easily from their convenience and enabling bus operators to simplify their operations and increase ticket sales. Our app features user-friendly interfaces, secure payment methods, and real-time schedule management. Join us in making bus travel more efficient and accessible for everyone!
