@@ -10,7 +10,7 @@ class PassengersInfo extends StatelessWidget {
       backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: const Text(
-          'Seat Selection',
+          'Passengers Info',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
@@ -33,7 +33,10 @@ class PassengersInfo extends StatelessWidget {
                       ),
                     ),
                     Text('-' * 4),
-                    const Icon(Icons.directions_bus_rounded),
+                                       CircleAvatar(
+                        backgroundImage:
+                            AssetImage('assets/images/walya_bus.png')),
+
                     Text('-' * 6),
                     const Text(
                       'Bahirdar',
@@ -71,16 +74,27 @@ class PassengersInfo extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(28.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly  ,
               children: [
+                SizedBox(
+                  width: 70,
+                ),
+
                 TextButton(
                   onPressed: () {},
                   child: Text('Cancel', style: TextStyle(color: Colors.red),),
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.all(8),
+                    fixedSize: Size(double.infinity, 50),
+                  ),
                 ),
+                SizedBox(width: 70,),
                 Expanded(
                     child: ElevatedButton(
                   onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    fixedSize: Size(150, 50),
+                    padding: EdgeInsets.all(8),
+                    fixedSize: Size(double.infinity, 50),
                   ),
                   child: Text('Continue'),
                 ))
@@ -153,7 +167,7 @@ class _PassengerInfoFormState extends State<PassengerInfoForm> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5)),
                 ),
-                labelText: 'Deboarding Point',
+                labelText: 'Boarding Point',
               ),
               items: const [
                 DropdownMenuItem(
@@ -185,7 +199,7 @@ class _PassengerInfoFormState extends State<PassengerInfoForm> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5)),
                 ),
-                labelText: 'Boarding Point',
+                labelText: 'Deboarding Point',
               ),
               items: const [
                 DropdownMenuItem(

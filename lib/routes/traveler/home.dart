@@ -4,22 +4,29 @@
 // Body: Column with 4 children: Starting point textfield (top), Destination textfield (middle), 'Date' textfield (middle), 'Search' button (bottom) , 'Popular Destinations' text (bottom), GridView with 4 children card childrens with images: 'Nairobi', 'Mombasa', 'Kisumu', 'Eldoret' (bottom)
 
 // import 'package:carousel_slider/carousel_slider.dart';
+import 'package:finote/routes/traveler/search_results.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  DateTime? selectedDate;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
         title: const Text('Home'),
         backgroundColor: Theme.of(context).primaryColor,
-        centerTitle: true,leading: const IconButton(
+        centerTitle: true,
+        leading: const IconButton(
           icon: Icon(Icons.account_circle),
           iconSize: 32,
           onPressed: null,
@@ -33,7 +40,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
-        child: Column(
+        child: ListView(
           children: <Widget>[
             const TextField(
               decoration: InputDecoration(
@@ -49,10 +56,24 @@ class HomePage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const TextField(
+            TextField(
+              controller: TextEditingController(
+                text: selectedDate != null
+                    ? '${selectedDate!.day}/${selectedDate!.month}/${selectedDate!.year}'
+                    : null,
+              ),
               decoration: InputDecoration(
                 hintText: 'Date',
-                prefixIcon: Icon(Icons.calendar_today),
+                prefixIcon: IconButton(
+                    onPressed: () async{
+                     selectedDate= await showDatePicker(
+                        context: context,
+                        initialDate: DateTime.now(),
+                        firstDate: DateTime.now(),
+                        lastDate: DateTime(2025),
+                      );
+                      setState(() {});
+                    }, icon: Icon(Icons.calendar_today)),
               ),
             ),
             const SizedBox(height: 16),
@@ -60,7 +81,9 @@ class HomePage extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(double.infinity, 50),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const SearchResults()));
+              },
               child: const Text('Search'),
             ),
             const SizedBox(height: 32),
@@ -119,3 +142,5 @@ class Advertisement extends StatelessWidget {
 //     );
 //   }
 // }
+
+

@@ -1,6 +1,5 @@
 import 'dart:math';
 
-import 'package:finote/app_theme.dart';
 import 'package:finote/widgets/seat.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +36,10 @@ class SeatSelection extends StatelessWidget {
                       ),
                     ),
                     Text('-' * 4),
-                    const Icon(Icons.directions_bus_rounded),
+                    CircleAvatar(
+                        backgroundImage:
+                            AssetImage('assets/images/walya_bus.png')),
+                    
                     Text('-' * 6),
                     const Text(
                       'Bahirdar',
