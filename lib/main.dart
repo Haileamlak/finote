@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           splash: "assets/images/logo_orange.png",
           curve: Curves.easeInOut,
           splashIconSize: 256,
-          nextScreen:  TicketScreen(),
+          nextScreen:  RegisterPage(),
           splashTransition: SplashTransition.scaleTransition),
     );
   }

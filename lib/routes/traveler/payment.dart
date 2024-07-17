@@ -41,7 +41,7 @@ class _PaymentPageState extends State<PaymentPage> {
                       ),
                     ),
                     Text('-' * 4),
-                    CircleAvatar(
+                    const CircleAvatar(
                         backgroundImage:
                             AssetImage('assets/images/walya_bus.png')),
                     Text('-' * 6),
@@ -151,14 +151,14 @@ class _PaymentPageState extends State<PaymentPage> {
                 items: [
                   DropdownMenuItem(
                     value: 'Mobile Money',
-                    child: Text('Mobile Money'),
+                    child: const Text('Mobile Money'),
                     onTap: () => setState(() {
                       paymentflag = true;
                     }),
                   ),
                   DropdownMenuItem(
                     value: 'Credit Card',
-                    child: Text('Credit Card'),
+                    child: const Text('Credit Card'),
                     onTap: () => setState(() {
                       paymentflag = false;
                     }),
@@ -244,25 +244,21 @@ class _PaymentPageState extends State<PaymentPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  SizedBox(
-                    width: 70,
-                  ),
+                 
                   TextButton(
                     onPressed: () {
                       Navigator.pop(context);
                     },
-                    child: Text(
+                    child: const Text(
                       'Cancel',
-                      style: TextStyle(color: Colors.red),
+                      style: const TextStyle(color: Colors.red),
                     ),
                     style: TextButton.styleFrom(
-                      padding: EdgeInsets.all(8),
-                      fixedSize: Size(double.infinity, 50),
+                      padding: const EdgeInsets.all(8),
+                      fixedSize: const Size(double.infinity, 50),
                     ),
                   ),
-                  SizedBox(
-                    width: 70,
-                  ),
+                  
                   Expanded(
                       child: ElevatedButton(
                     onPressed: () {
@@ -271,7 +267,7 @@ class _PaymentPageState extends State<PaymentPage> {
                           builder: (context) {
                             return AlertDialog(
                               title: Icon(Icons.check_circle,
-                                  color: Colors.green, size: 50),
+                                  color: Theme.of(context).primaryColor, size: 50),
                               content: const Text(
                                   'Your payment was successful. Enjoy your trip!'),
                               actions: [
@@ -291,10 +287,10 @@ class _PaymentPageState extends State<PaymentPage> {
                           });
                     },
                     style: ElevatedButton.styleFrom(
-                      padding: EdgeInsets.all(8),
-                      fixedSize: Size(double.infinity, 50),
+                      padding: const EdgeInsets.all(8),
+                      fixedSize: const Size(double.infinity, 50),
                     ),
-                    child: Text('Pay and Finish'),
+                    child: const Text('Pay and Finish'),
                   ))
                 ],
               ),
