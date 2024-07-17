@@ -21,17 +21,13 @@ Finote is a mobile application designed to revolutionize bus travel in Ethiopia 
   <tr>
     <td><img src="assets/screenshots/5.jpg" width=270 height=480></td>
     <td><img src="assets/screenshots/6.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/7.jpg" width=270 height=480></td>
   </tr>
   
   <tr>
-    <td><img src="assets/screenshots/7.jpg" width=270 height=480></td>
     <td><img src="assets/screenshots/8.jpg" width=270 height=480></td>
-  </tr>
-          
-  <tr>
     <td><img src="assets/screenshots/9.jpg" width=270 height=480></td>
   </tr>
-          
-          
+        
  </table>
  
