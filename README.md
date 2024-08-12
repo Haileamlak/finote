@@ -1,6 +1,6 @@
 # Finote - Revolutionizing Bus Travel in Ethiopia
 
-![Finote Logo](link_to_logo_image) <!-- Add the logo image link here -->
+![Finote Logo](assets/images/logo_blue.png) <!-- Add the logo image link here -->
 
 ## Overview
 
@@ -53,8 +53,7 @@ Before you begin, ensure you have met the following requirements:
 ├── assets               # Images, fonts, etc.
 ├── test                 # Unit and widget tests
 └── README.md            # Project documentation
-
-
+```
 <table>
   <tr>
   </tr>
