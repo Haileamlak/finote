@@ -1,6 +1,6 @@
 # Finote - Revolutionizing Bus Travel in Ethiopia
 
-![Finote Logo](assets/images/logo_blue.png) <!-- Add the logo image link here -->
+![Finote Logo](assets/images/logo_orange.png) <!-- Add the logo image link here -->
 
 ## Overview
 
