@@ -14,6 +14,35 @@
 - **User-friendly Interface**: Simple and intuitive design for a seamless user experience.
 - **Bus Operator Tools**: Tools for operators to manage schedules, track sales, and validate tickets.
 
+## Screenshots
+
+<table>
+  <tr>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/1.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/2.jpg" width=270 height=480></td>
+  </tr>
+
+  <tr>
+    <td><img src="assets/screenshots/3.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/4.jpg" width=270 height=480></td>
+  </tr>
+  
+
+  <tr>
+    <td><img src="assets/screenshots/5.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/6.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/7.jpg" width=270 height=480></td>
+  </tr>
+  
+  <tr>
+    <td><img src="assets/screenshots/8.jpg" width=270 height=480></td>
+    <td><img src="assets/screenshots/9.jpg" width=270 height=480></td>
+  </tr>
+        
+ </table>
+ 
 ## Getting Started
 
 ### Prerequisites
@@ -54,30 +83,3 @@ Before you begin, ensure you have met the following requirements:
 ├── test                 # Unit and widget tests
 └── README.md            # Project documentation
 ```
-<table>
-  <tr>
-  </tr>
-  <tr>
-    <td><img src="assets/screenshots/1.jpg" width=270 height=480></td>
-    <td><img src="assets/screenshots/2.jpg" width=270 height=480></td>
-  </tr>
-
-  <tr>
-    <td><img src="assets/screenshots/3.jpg" width=270 height=480></td>
-    <td><img src="assets/screenshots/4.jpg" width=270 height=480></td>
-  </tr>
-  
-
-  <tr>
-    <td><img src="assets/screenshots/5.jpg" width=270 height=480></td>
-    <td><img src="assets/screenshots/6.jpg" width=270 height=480></td>
-    <td><img src="assets/screenshots/7.jpg" width=270 height=480></td>
-  </tr>
-  
-  <tr>
-    <td><img src="assets/screenshots/8.jpg" width=270 height=480></td>
-    <td><img src="assets/screenshots/9.jpg" width=270 height=480></td>
-  </tr>
-        
- </table>
- 
